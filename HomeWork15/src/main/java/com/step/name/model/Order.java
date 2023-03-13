@@ -7,7 +7,7 @@ public class Order {
 
     private long id;
 
-    private long user_id;
+    private long userId;
 
     private BigDecimal total_prise;
 
@@ -15,14 +15,14 @@ public class Order {
         this.id = id;
     }
 
-    public Order(long id, long user_id) {
+    public Order(long id, long userId) {
         this.id = id;
-        this.user_id = user_id;
+        this.userId = userId;
     }
 
-    public Order(long id, long user_id, BigDecimal total_prise) {
+    public Order(long id, long userId, BigDecimal total_prise) {
         this.id = id;
-        this.user_id = user_id;
+        this.userId = userId;
         this.total_prise = total_prise;
     }
 
@@ -34,12 +34,12 @@ public class Order {
         this.id = id;
     }
 
-    public long getUser_id() {
-        return user_id;
+    public long getUserId() {
+        return userId;
     }
 
-    public void setUser_id(long user_id) {
-        this.user_id = user_id;
+    public void setUserId(long userId) {
+        this.userId = userId;
     }
 
     public BigDecimal getTotal_prise() {
@@ -55,19 +55,21 @@ public class Order {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Order order = (Order) o;
-        return id == order.id && user_id == order.user_id && Objects.equals(total_prise, order.total_prise);
+        return id == order.id &&
+                userId == order.userId &&
+                Objects.equals(total_prise, order.total_prise);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, user_id, total_prise);
+        return Objects.hash(id, userId, total_prise);
     }
 
     @Override
     public String toString() {
-        return "Order{" +
+        return "OrderDAO{" +
                 "id=" + id +
-                ", user_id=" + user_id +
+                ", userId=" + userId +
                 ", total_prise=" + total_prise +
                 '}';
     }

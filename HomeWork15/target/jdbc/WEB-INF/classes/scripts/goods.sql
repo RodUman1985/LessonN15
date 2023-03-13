@@ -22,3 +22,20 @@ create table users
     userName VARCHAR(50),
     password VARCHAR(50)
 );
+
+
+
+create table order
+(
+    id       INT,
+    user_id  INT,
+    total_prise DOUBLE
+);
+
+
+create table order_good
+(
+    id       INT
+    order_id VARCHAR(50),
+    user_id     VARCHAR(50)
+);

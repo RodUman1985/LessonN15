@@ -8,8 +8,10 @@ com\step\name\config\Connector.class
 com\step\name\service\UserService.class
 com\step\name\service\UtilsForShop.class
 com\step\name\service\GoodService.class
+com\step\name\model\Order_Good.class
 com\step\name\dao\impl\GoodDaoImpl.class
 com\step\name\model\User.class
 com\step\name\dao\impl\UserDAOImpl.class
+com\step\name\model\Order.class
 com\step\name\dao\UserDAO.class
 com\step\name\filters\FilterForShop.class

@@ -36,6 +36,6 @@ create table order
 create table order_good
 (
     id       INT
-    order_id VARCHAR(50),
-    user_id     VARCHAR(50)
+    order_id INT,
+    user_id     INT
 );
