@@ -1,0 +1,15 @@
+com\step\name\config\PropertiesLoader.class
+com\step\name\model\Good.class
+com\step\name\service\impl\GoodServiceImpl.class
+com\step\name\config\ContextInitializer.class
+com\step\name\dao\GoodDao.class
+com\step\name\service\impl\UserServiceImpl.class
+com\step\name\config\Connector.class
+com\step\name\service\UserService.class
+com\step\name\service\UtilsForShop.class
+com\step\name\service\GoodService.class
+com\step\name\dao\impl\GoodDaoImpl.class
+com\step\name\model\User.class
+com\step\name\dao\impl\UserDAOImpl.class
+com\step\name\dao\UserDAO.class
+com\step\name\filters\FilterForShop.class
